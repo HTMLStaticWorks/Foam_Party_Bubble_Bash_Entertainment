@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-dir="ltr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safety — FoamFest</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="FoamFest home">
+        <svg class="logo-icon" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="14" cy="20" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+          <circle cx="26" cy="14" r="7" stroke="currentColor" stroke-width="2" fill="none" />
+          <circle cx="28" cy="28" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+        </svg>
+        <span class="logo-wordmark">FoamFest</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="safety.html">Safety</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--primary btn--header" href="booking.html">Book Now</a>
+
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle dark and light mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+        <button type="button" class="icon-btn" data-dir-toggle aria-label="Toggle text direction">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M8 6h12M8 12h8M8 18h12M4 6h.01M4 12h.01M4 18h.01" />
+          </svg>
+        </button>
+      </div>
+
+      <button type="button" class="hamburger" data-menu-open aria-expanded="false" aria-controls="mobileOverlay"
+        aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
+    <button type="button" class="mobile-overlay-close" data-menu-close aria-label="Close menu">✕</button>
+    <nav aria-label="Mobile navigation">
+      <ul class="mobile-overlay-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home2.html">Home 2</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="booking.html">Booking &amp; FAQ</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="mobile-overlay-cta">
+        <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+        <a class="btn btn--secondary btn--full" href="contact.html">Get Quote</a>
+        <div style="display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem">
+          <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2" />
+            </svg>
+          </button>
+          <button type="button" class="icon-btn" data-dir-toggle aria-label="Toggle direction">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M8 6h12M8 12h8M8 18h12M4 6h.01M4 12h.01M4 18h.01" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+    <main id="main">
+      <section class="hero" style="min-height: 50vh">
+        <div class="hero__bg-img">
+          <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=3840&q=100&fit=crop&auto=format" alt="Supervised children playing safely during an organized outdoor kids event" width="1920" height="1080" style="width:100%;height:100%;object-fit:cover" fetchpriority="high" />
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content text-center" style="margin-inline: auto">
+          <div class="safety-hero-icon" data-animate style="display: flex; justify-content: center">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+          </div>
+          <h1 data-animate>Safety Without Compromise</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="text-center" data-animate>Safety Pillars</h2>
+          <p class="lead text-center" data-animate>Engineered for fun, architected for absolute security.</p>
+          
+          <div class="safety-grid" style="margin-top: var(--space-2xl)">
+            <article class="glass-card safety-card" data-animate>
+              <div class="safety-card-media">
+                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=800&q=100&fit=crop&auto=format" alt="Glistening soap bubbles" loading="lazy" />
+              </div>
+              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></div>
+              <h3>Non-Toxic Foam</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted)">Biodegradable concentrates mixed to exact manufacturer ratios — never mystery buckets.</p>
+            </article>
+
+            <article class="glass-card safety-card" data-animate>
+              <div class="safety-card-media">
+                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=100&fit=crop&auto=format" alt="Children playing safely" loading="lazy" />
+              </div>
+              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10" /><path d="M12 8v4l3 3" /></svg></div>
+              <h3>Child-Safe</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted)">Hypoallergenic formulas with SDS sheets available before your event day.</p>
+            </article>
+
+            <article class="glass-card safety-card" data-animate>
+              <div class="safety-card-media">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=100&fit=crop&auto=format" alt="Professional event crew briefing" loading="lazy" />
+              </div>
+              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /></svg></div>
+              <h3>Trained Staff</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted)">Operators certified in crowd pacing, emergency stops, and slip prevention.</p>
+            </article>
+
+            <article class="glass-card safety-card" data-animate>
+              <div class="safety-card-media">
+                <img src="https://images.unsplash.com/photo-1583324113626-70df0f4deaab?w=800&q=100&fit=crop&auto=format" alt="Safety equipment kit" loading="lazy" />
+              </div>
+              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" /></svg></div>
+              <h3>Emergency Ready</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted)">Radios, first-aid, and venue contacts printed on every run sheet.</p>
+            </article>
+
+            <article class="glass-card safety-card" data-animate>
+              <div class="safety-card-media">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=100&fit=crop&auto=format" alt="Cleaning and sanitation" loading="lazy" />
+              </div>
+              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg></div>
+              <h3>Hygiene First</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted)">Tanks flushed, lines sanitized, and cannons inspected between bookings.</p>
+            </article>
+
+            <article class="glass-card safety-card" data-animate>
+              <div class="safety-card-media">
+                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=100&fit=crop&auto=format" alt="Official event insurance documents" loading="lazy" />
+              </div>
+              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg></div>
+              <h3>Fully Insured</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted)">General liability with optional event paperwork for schools and venues.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container" style="max-width: 800px">
+          <div class="text-center">
+            <h2 data-animate>The Safety Checklist</h2>
+            <p class="lead" data-animate>Every event follows a rigorous, non-negotiable inspection flow.</p>
+          </div>
+          <div data-accordion class="glass-card" style="margin-top: var(--space-xl); padding: 0" data-animate>
+            <div class="accordion-item" style="padding: 0 var(--space-lg)">
+              <button type="button" class="accordion-trigger">Pre-event venue checks<span class="accordion-icon">+</span></button>
+              <div class="accordion-panel"><div class="accordion-panel-inner">Drainage paths, outlet testing, slip mats, and fence gaps verified with your site contact.</div></div>
+            </div>
+            <div class="accordion-item" style="padding: 0 var(--space-lg)">
+              <button type="button" class="accordion-trigger">During-event monitoring<span class="accordion-icon">+</span></button>
+              <div class="accordion-panel"><div class="accordion-panel-inner">Foam depth capped for toddlers, teen zones separated when requested, and audio kept hearing-safe.</div></div>
+            </div>
+            <div class="accordion-item" style="padding: 0 var(--space-lg); border-bottom: none">
+              <button type="button" class="accordion-trigger">Wind and weather holds<span class="accordion-icon">+</span></button>
+              <div class="accordion-panel"><div class="accordion-panel-inner">We pause cannons in gusty wind, stash cables, and resume when surfaces are stable.</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container text-center">
+          <h2 data-animate>Industry Compliance</h2>
+          <div class="cert-row" style="margin-top: var(--space-xl); justify-content: center" data-animate>
+            <span class="cert-badge">ISO-Inspired QA Logs</span>
+            <span class="cert-badge">Irritation Testing Lab Partner</span>
+            <span class="cert-badge">Regional Safe Events Member</span>
+          </div>
+          <div style="margin-top: var(--space-3xl); border-radius: var(--radius-card); overflow: hidden; max-width: 960px; margin-inline: auto; box-shadow: var(--shadow-glow-cyan)" data-animate>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=100&fit=crop&auto=format" alt="Safety briefing with diverse staff reviewing planning documents together" loading="lazy" width="1200" height="600" style="width:100%;height:400px;object-fit:cover" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container" style="max-width: 800px">
+          <div class="text-center">
+            <h2 data-animate>Parent FAQ</h2>
+            <p class="lead" data-animate>Quick answers to common safety concerns from our community.</p>
+          </div>
+          <div data-accordion data-accordion-single class="glass-card" style="margin-top: var(--space-xl); padding: 0" data-animate>
+            <div class="accordion-item" style="padding: 0 var(--space-lg)">
+              <button type="button" class="accordion-trigger">Will foam irritate sensitive skin?<span class="accordion-icon">+</span></button>
+              <div class="accordion-panel"><div class="accordion-panel-inner">Most guests tolerate our formula well; we provide rinse stations and ingredient lists on request.</div></div>
+            </div>
+            <div class="accordion-item" style="padding: 0 var(--space-lg)">
+              <button type="button" class="accordion-trigger">Do kids need goggles?<span class="accordion-icon">+</span></button>
+              <div class="accordion-panel"><div class="accordion-panel-inner">Optional swim goggles are welcome; foam stays shoulder-height for youngest groups.</div></div>
+            </div>
+            <div class="accordion-item" style="padding: 0 var(--space-lg)">
+              <button type="button" class="accordion-trigger">How slippery does it get?<span class="accordion-icon">+</span></button>
+              <div class="accordion-panel"><div class="accordion-panel-inner">We deploy mats, pace cannon bursts, and station spotters near transitions.</div></div>
+            </div>
+            <div class="accordion-item" style="padding: 0 var(--space-lg); border-bottom: none">
+              <button type="button" class="accordion-trigger">What about allergies?<span class="accordion-icon">+</span></button>
+              <div class="accordion-panel"><div class="accordion-panel-inner">Share allergy notes during booking — we adapt concentrates and signage accordingly.</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container text-center">
+          <a class="btn btn--primary" href="#" download role="button">Download Safety Guide</a>
+          <p style="margin-top: var(--space-md); color: var(--color-text-muted)">PDF overview with ingredient FAQs and venue diagrams.</p>
+        </div>
+      </section>
+    </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo-link" style="margin-bottom: var(--space-md)">
+          <svg class="logo-icon" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="14" cy="20" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+            <circle cx="26" cy="14" r="7" stroke="currentColor" stroke-width="2" fill="none" />
+            <circle cx="28" cy="28" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+          </svg>
+          <span class="logo-wordmark">FoamFest</span>
+        </a>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--space-md)">
+          Premium foam parties and bubble experiences engineered for safe, vibrant celebrations.
+        </p>
+        <div class="footer-social" aria-label="Social links">
+          <a href="#" aria-label="Facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke-width="2">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg></a>
+          <a href="#" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" />
+            </svg></a>
+          <a href="#" aria-label="YouTube"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="safety.html">Safety</a></li>
+
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="packages.html">Kids Foam Parties</a></li>
+          <li><a href="packages.html">Corporate Foam Days</a></li>
+          <li><a href="packages.html">Premium Bubble Bash</a></li>
+          <li><a href="booking.html">DJ Add-Ons</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p style="display: flex; gap: 0.5rem; align-items: flex-start">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span style="color: var(--color-text-muted)">(555) 019-FOAM</span>
+        </p>
+        <p style="display: flex; gap: 0.5rem; align-items: flex-start">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <span style="color: var(--color-text-muted)">hello@foamfest.events</span>
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© FoamFest 2026 · Foam Party &amp; Bubble Bash Entertainment</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
+    </div>
+  </footer>
+  </body>
+</html>

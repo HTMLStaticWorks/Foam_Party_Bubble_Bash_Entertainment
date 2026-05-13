@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-dir="ltr" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foam Party Packages — FoamFest</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap"
+    rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="FoamFest home">
+        <svg class="logo-icon" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="14" cy="20" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+          <circle cx="26" cy="14" r="7" stroke="currentColor" stroke-width="2" fill="none" />
+          <circle cx="28" cy="28" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+        </svg>
+        <span class="logo-wordmark">FoamFest</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="safety.html">Safety</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--primary btn--header" href="booking.html">Book Now</a>
+
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle dark and light mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+        <button type="button" class="icon-btn" data-dir-toggle aria-label="Toggle text direction">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M8 6h12M8 12h8M8 18h12M4 6h.01M4 12h.01M4 18h.01" />
+          </svg>
+        </button>
+      </div>
+
+      <button type="button" class="hamburger" data-menu-open aria-expanded="false" aria-controls="mobileOverlay"
+        aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
+    <button type="button" class="mobile-overlay-close" data-menu-close aria-label="Close menu">✕</button>
+    <nav aria-label="Mobile navigation">
+      <ul class="mobile-overlay-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home2.html">Home 2</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="booking.html">Booking &amp; FAQ</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="mobile-overlay-cta">
+        <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+        <a class="btn btn--secondary btn--full" href="contact.html">Get Quote</a>
+        <div style="display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem">
+          <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2" />
+            </svg>
+          </button>
+          <button type="button" class="icon-btn" data-dir-toggle aria-label="Toggle direction">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M8 6h12M8 12h8M8 18h12M4 6h.01M4 12h.01M4 18h.01" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="hero" style="min-height: 50vh">
+      <div class="hero__bg-img">
+        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=3840&q=100&fit=crop&auto=format"
+          alt="Children playing joyfully in foam at a bright outdoor party" width="1920" height="1080"
+          style="width:100%;height:100%;object-fit:cover" fetchpriority="high" />
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="bubbles-layer" data-bubbles></div>
+      <div class="hero__content">
+        <h1 class="page-title" data-animate>Foam Party Packages</h1>
+      </div>
+    </section>
+
+
+
+
+    <section class="section">
+      <div class="container">
+        <h2 class="text-center" data-animate>Package FAQ</h2>
+
+        <div class="faq-grid" style="margin-top: var(--space-2xl)">
+          <div class="faq-item" data-animate>
+            <button class="faq-trigger" onclick="this.parentElement.classList.toggle('active')">
+              <span>How far in advance should we book?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>We recommend booking at least 4-6 weeks in advance for weekends and peak summer months. Corporate
+                events should aim for 8-12 weeks.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-animate>
+            <button class="faq-trigger" onclick="this.parentElement.classList.toggle('active')">
+              <span>Do you provide power and water?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>We require access to a standard outdoor water spigot and a dedicated 20-amp power outlet. For remote
+                areas, we can provide generators for an additional fee.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-animate>
+            <button class="faq-trigger" onclick="this.parentElement.classList.toggle('active')">
+              <span>Can packages scale for mixed ages?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Absolutely! Our hosts adjust the foam density and music selection in real-time to ensure toddlers and
+                adults can all enjoy the space safely.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-animate>
+            <button class="faq-trigger" onclick="this.parentElement.classList.toggle('active')">
+              <span>What happens if it rains?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Light rain won't stop the foam! For heavy storms or lightning, we offer a "Rain Check" policy to
+                reschedule your event within 12 months.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-animate>
+            <button class="faq-trigger" onclick="this.parentElement.classList.toggle('active')">
+              <span>Are deposits refundable?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Deposits are non-refundable but fully transferable to a new date if cancelled at least 14 days before
+                the event.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-animate>
+            <button class="faq-trigger" onclick="this.parentElement.classList.toggle('active')">
+              <span>Can we mix corporate and family programming?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Yes, we specialize in "Day-to-Night" transitions where the first hour is family-focused and the second
+                hour shifts to a high-energy adult vibe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function updateTotal() {
+        const base = 749;
+        let total = base;
+        document.querySelectorAll('.builder-option input:checked').forEach(input => {
+          total += parseInt(input.getAttribute('data-price'));
+        });
+        document.getElementById('builderTotal').innerText = `$${total}`;
+      }
+    </script>
+  </main>
+  <h2 class="text-center" data-animate>Filter by Event Type</h2>
+  <div class="filter-tabs" data-animate>
+    <button type="button" class="filter-tab is-active" data-package-filter="all">All</button>
+    <button type="button" class="filter-tab" data-package-filter="kids">Kids</button>
+    <button type="button" class="filter-tab" data-package-filter="corporate">Corporate</button>
+    <button type="button" class="filter-tab" data-package-filter="premium">Premium</button>
+  </div>
+
+
+  <div class="glass-card" data-accordion style="padding: 0" data-animate>
+    <div class="accordion-item is-open" style="border: none">
+      <button type="button" class="accordion-trigger" style="padding: var(--space-xl)">
+        <span>Bubble Bash Packages (tap to expand or collapse)</span>
+        <span class="accordion-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="accordion-panel">
+        <div class="accordion-panel-inner" style="padding: 0 var(--space-xl) var(--space-xl)">
+          <div class="package-cards-grid">
+            <article class="glass-card package-card-item" data-package-card data-category="kids" data-animate>
+              <div class="package-card-img">
+                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=800&q=100&fit=crop&auto=format"
+                  alt="Glistening soap bubbles floating in the air" loading="lazy" width="400" height="250" />
+              </div>
+              <h3>Little Splash</h3>
+              <p class="price-tag" style="font-size: 1.5rem">$399</p>
+              <p>15 guests · 45 min</p>
+              <ul class="check-list" style="font-size: 0.9rem">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Single bubble station</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Host + playlist</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Non-toxic mix</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Setup &amp; strike</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Parent briefing</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+            </article>
+            <article class="glass-card package-card-item" data-package-card data-category="kids" data-animate>
+              <div class="package-card-img">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=100&fit=crop&auto=format"
+                  alt="Corporate colleagues celebrating at an outdoor company gathering" loading="lazy" width="400"
+                  height="250" />
+              </div>
+              <h3>Bubble Pop Party</h3>
+              <p class="price-tag" style="font-size: 1.5rem">$499</p>
+              <p>25 guests · 60 min</p>
+              <ul class="check-list" style="font-size: 0.9rem">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Extended bubble runway</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Kid-friendly contests</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Color burst option</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Floor mats included</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Rain plan coaching</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+            </article>
+            <article class="glass-card package-card-item" data-package-card data-category="corporate" data-animate>
+              <div class="package-card-img">
+                <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&q=100&fit=crop&auto=format"
+                  alt="Guests celebrating outdoors at an evening summer party" loading="lazy" width="400"
+                  height="250" />
+              </div>
+              <h3>Team Splash Hour</h3>
+              <p class="price-tag" style="font-size: 1.5rem">$899</p>
+              <p>80 guests · 75 min</p>
+              <ul class="check-list" style="font-size: 0.9rem">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Branded welcome arch</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>MC + crowd routing</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Dual foam zones</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Liability rider ready</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Photo lane markers</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+            </article>
+            <article class="glass-card package-card-item" data-package-card data-category="premium kids" data-animate>
+              <div class="package-badge">Popular</div>
+              <div class="package-card-img">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=100&fit=crop&auto=format"
+                  alt="Outdoor festival venue with crowd seating under twilight sky" loading="lazy" width="400"
+                  height="250" />
+              </div>
+              <h3>Classic FoamFest</h3>
+              <p class="price-tag" style="font-size: 1.5rem">$749</p>
+              <p>50 guests · 90 min</p>
+              <ul class="check-list" style="font-size: 0.9rem">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Signature foam floor</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Interactive games</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Glow foam finale</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Sound package</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Dedicated stage host</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+            </article>
+            <article class="glass-card package-card-item" data-package-card data-category="premium" data-animate>
+              <div class="package-card-img">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=100&fit=crop&auto=format"
+                  alt="Diverse team collaborating and smiling together indoors" loading="lazy" width="400"
+                  height="250" />
+              </div>
+              <h3>Festival Foam Lane</h3>
+              <p class="price-tag" style="font-size: 1.5rem">$1,299</p>
+              <p>150 guests · 2 hr</p>
+              <ul class="check-list" style="font-size: 0.9rem">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Triple cannon rig</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Crowd barriers</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Tech rehearsal slot</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Emergency radios</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Load-in crew of 4</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+            </article>
+            <article class="glass-card package-card-item" data-package-card data-category="corporate premium"
+              data-animate>
+              <div class="package-card-img">
+                <img src="https://images.unsplash.com/photo-1496337589254-7e19d01cec44?w=800&q=100&fit=crop&auto=format"
+                  alt="Crowd of happy guests celebrating outdoors in sunlight" loading="lazy" width="400"
+                  height="250" />
+              </div>
+              <h3>Executive Bubble Lounge</h3>
+              <p class="price-tag" style="font-size: 1.5rem">$1,599</p>
+              <p>120 guests · 2 hr</p>
+              <ul class="check-list" style="font-size: 0.9rem">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>VIP lounge timing</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Branded foam hue</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Dedicated producer</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Private changing tents</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Post-event rinse zone</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+            </article>
+            <article class="glass-card package-card-item" data-package-card data-category="kids premium" data-animate>
+              <div class="package-card-img">
+                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=100&fit=crop&auto=format"
+                  alt="High-energy stadium crowd in foam" loading="lazy" width="400" height="250" />
+              </div>
+              <h3>Ultimate Bubble Bash</h3>
+              <p class="price-tag" style="font-size: 1.5rem">$1,899</p>
+              <p>200 guests · 3 hr</p>
+              <ul class="check-list" style="font-size: 0.9rem">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Full venue mapping</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Bubble tunnel + foam pit</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Power distro consult</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>On-site safety captain</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>After-party rinse team</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+            </article>
+            <article class="glass-card package-card-item" data-package-card data-category="premium" data-animate>
+              <div class="package-badge">Elite</div>
+              <div class="package-card-img">
+                <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=100&fit=crop&auto=format"
+                  alt="Massive high-energy crowd at a festival with lights and foam" loading="lazy" width="400"
+                  height="250" />
+              </div>
+              <h3>Mega Foam Marathon</h3>
+              <p class="price-tag" style="font-size: 1.5rem">$2,499</p>
+              <p>500 guests · 4 hr</p>
+              <ul class="check-list" style="font-size: 0.9rem">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Quad cannon array</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Laser light show</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Custom soundtrack</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>6-person crew</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Full venue coverage</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+            </article>
+            <article class="glass-card package-card-item" data-package-card data-category="premium" data-animate>
+              <div class="package-badge">VIP</div>
+              <div class="package-card-img">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=100&fit=crop&auto=format"
+                  alt="Neon UV party with glow foam and LED dancers" loading="lazy" width="400" height="250" />
+              </div>
+              <h3>VIP Glow Gala</h3>
+              <p class="price-tag" style="font-size: 1.5rem">$3,999</p>
+              <p>1000 guests · 5 hr</p>
+              <ul class="check-list" style="font-size: 0.9rem">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>UV-reactive foam</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>LED dancers</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Live DJ</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>VIP lounge mgmt</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>Drone footage</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="text-center" data-animate>Elite Add-Ons</h2>
+        <p class="lead text-center" data-animate>Elevate your experience with these premium enhancements.</p>
+        
+        <div class="addon-grid">
+          <div class="glass-card addon-card" data-animate>
+            <div class="addon-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83" /></svg>
+            </div>
+            <h4>Extra Foam</h4>
+            <p class="addon-price">+$150</p>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted)">Double the volume for maximum saturation.</p>
+          </div>
+          <div class="glass-card addon-card" data-animate>
+            <div class="addon-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg>
+            </div>
+            <h4>DJ Service</h4>
+            <p class="addon-price">+$275</p>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted)">Professional MC and custom event playlist.</p>
+          </div>
+          <div class="glass-card addon-card" data-animate>
+            <div class="addon-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 4.5v9L12 21l-9-4.5v-9L12 3z" /></svg>
+            </div>
+            <h4>Decorations</h4>
+            <p class="addon-price">+$120</p>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted)">Themed banners and perimeter styling.</p>
+          </div>
+          <div class="glass-card addon-card" data-animate>
+            <div class="addon-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" /><circle cx="12" cy="13" r="4" /></svg>
+            </div>
+            <h4>Photographer</h4>
+            <p class="addon-price">+$350</p>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted)">High-res digital gallery of every splash.</p>
+          </div>
+          <div class="glass-card addon-card" data-animate>
+            <div class="addon-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3" /></svg>
+            </div>
+            <h4>Catering</h4>
+            <p class="addon-price">+$200</p>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted)">Light refreshments and themed snacks.</p>
+          </div>
+          <div class="glass-card addon-card" data-animate>
+            <div class="addon-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M5 7l1 12h12l1-12M9 7V5a3 3 0 0 1 6 0v2" /></svg>
+            </div>
+            <h4>Custom Signage</h4>
+            <p class="addon-price">+$90</p>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted)">Personalized welcome and safety boards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  <section class="section">
+    <div class="container text-center">
+      <div class="cta-mesh glass-card" data-animate>
+        <div class="cta-mesh-inner">
+          <h2 class="mt-0" style="color: #f0f6ff">Cannot decide yet?</h2>
+          <p style="color: rgba(240,246,255,0.9)">Tell us about your crowd — we will recommend the leanest package that
+            still feels epic.</p>
+          <a class="btn btn--primary" href="contact.html">Contact Our Planners</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo-link" style="margin-bottom: var(--space-md)">
+          <svg class="logo-icon" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="14" cy="20" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+            <circle cx="26" cy="14" r="7" stroke="currentColor" stroke-width="2" fill="none" />
+            <circle cx="28" cy="28" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+          </svg>
+          <span class="logo-wordmark">FoamFest</span>
+        </a>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--space-md)">
+          Premium foam parties and bubble experiences engineered for safe, vibrant celebrations.
+        </p>
+        <div class="footer-social" aria-label="Social links">
+          <a href="#" aria-label="Facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke-width="2">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg></a>
+          <a href="#" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" />
+            </svg></a>
+          <a href="#" aria-label="YouTube"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="safety.html">Safety</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="packages.html">Kids Foam Parties</a></li>
+          <li><a href="packages.html">Corporate Foam Days</a></li>
+          <li><a href="packages.html">Premium Bubble Bash</a></li>
+          <li><a href="booking.html">DJ Add-Ons</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p style="display: flex; gap: 0.5rem; align-items: flex-start">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span style="color: var(--color-text-muted)">(555) 019-FOAM</span>
+        </p>
+        <p style="display: flex; gap: 0.5rem; align-items: flex-start">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <span style="color: var(--color-text-muted)">hello@foamfest.events</span>
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© FoamFest 2026 · Foam Party &amp; Bubble Bash Entertainment</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
+    </div>
+  </footer>
+</body>
+
+</html>

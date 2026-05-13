@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-dir="ltr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials — FoamFest</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="FoamFest home">
+        <svg class="logo-icon" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="14" cy="20" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+          <circle cx="26" cy="14" r="7" stroke="currentColor" stroke-width="2" fill="none" />
+          <circle cx="28" cy="28" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+        </svg>
+        <span class="logo-wordmark">FoamFest</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="safety.html">Safety</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--primary btn--header" href="booking.html">Book Now</a>
+
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle dark and light mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+        <button type="button" class="icon-btn" data-dir-toggle aria-label="Toggle text direction">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M8 6h12M8 12h8M8 18h12M4 6h.01M4 12h.01M4 18h.01" />
+          </svg>
+        </button>
+      </div>
+
+      <button type="button" class="hamburger" data-menu-open aria-expanded="false" aria-controls="mobileOverlay"
+        aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
+    <button type="button" class="mobile-overlay-close" data-menu-close aria-label="Close menu">✕</button>
+    <nav aria-label="Mobile navigation">
+      <ul class="mobile-overlay-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home2.html">Home 2</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="booking.html">Booking &amp; FAQ</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="mobile-overlay-cta">
+        <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
+        <a class="btn btn--secondary btn--full" href="contact.html">Get Quote</a>
+        <div style="display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem">
+          <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2" />
+            </svg>
+          </button>
+          <button type="button" class="icon-btn" data-dir-toggle aria-label="Toggle direction">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M8 6h12M8 12h8M8 18h12M4 6h.01M4 12h.01M4 18h.01" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+    <main id="main">
+      <section class="hero rating-hero" style="min-height: 52vh">
+        <div class="hero__bg-img">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=3840&q=100&fit=crop&auto=format" alt="Joyful foam party scene with children celebrating outdoors" width="1920" height="1080" style="width:100%;height:100%;object-fit:cover" fetchpriority="high" />
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content text-center" style="margin-inline: auto">
+          <div class="big-rating" data-animate>4.9 / 5 Stars</div>
+          <div style="display: flex; justify-content: center; gap: 6px; margin-bottom: var(--space-md)" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 data-animate>Featured Story</h2>
+          <blockquote class="glass-card" style="margin-top: var(--space-xl); padding: var(--space-2xl); font-size: 1.25rem" data-animate>
+            <div class="star-row" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>
+            </div>
+            <p>“FoamFest turned our school field day into a headline moment. Parents stayed dry, kids stayed busy, and the crew anticipated every question before we asked.”</p>
+            <footer style="display: flex; align-items: center; gap: var(--space-md); margin-top: var(--space-lg)">
+              <img src="https://ui-avatars.com/api/?name=Morgan+Lee&size=128&background=00E5FF&color=fff" alt="Avatar for Morgan Lee" width="72" height="72" style="width:72px;height:72px;border-radius:50%;object-fit:cover" loading="lazy" />
+              <div>
+                <strong>Morgan Lee</strong><br />
+                <span style="color: var(--color-text-muted)">PTA President · School field day · June 2026</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <h2 class="text-center" data-animate>More Celebrations</h2>
+          <div class="feature-grid stagger-children" style="margin-top: var(--space-2xl)">
+            <article class="glass-card" data-animate>
+              <div class="star-row" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>×5</div>
+              <p>“DJ add-on was clutch — seamless transitions between foam waves.”</p>
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: var(--space-md)">
+                <img src="https://ui-avatars.com/api/?name=Chris+P&size=128&background=00E5FF&color=fff" alt="Avatar for Chris P." width="44" height="44" style="width:44px;height:44px;border-radius:50%" loading="lazy" />
+                <span><strong>Chris P.</strong><br /><span style="color: var(--color-text-muted); font-size: 0.85rem">Weekend block party</span></span>
+              </div>
+            </article>
+            <article class="glass-card" data-animate>
+              <div class="star-row" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>×5</div>
+              <p>“Rain backup plan activated in minutes — still felt seamless.”</p>
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: var(--space-md)">
+                <img src="https://ui-avatars.com/api/?name=Jamie+Alves&size=128&background=00E5FF&color=fff" alt="Avatar for Jamie Alves" width="44" height="44" style="width:44px;height:44px;border-radius:50%" loading="lazy" />
+                <span><strong>Jamie Alves</strong><br /><span style="color: var(--color-text-muted); font-size: 0.85rem">Summer camp director</span></span>
+              </div>
+            </article>
+            <article class="glass-card" data-animate>
+              <div class="star-row" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>×5</div>
+              <p>“Insurance paperwork handled — facilities team approved same day.”</p>
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: var(--space-md)">
+                <img src="https://ui-avatars.com/api/?name=Riley+Cho&size=128&background=00E5FF&color=fff" alt="Avatar for Riley Cho" width="44" height="44" style="width:44px;height:44px;border-radius:50%" loading="lazy" />
+                <span><strong>Riley Cho</strong><br /><span style="color: var(--color-text-muted); font-size: 0.85rem">University union board</span></span>
+              </div>
+            </article>
+            <article class="glass-card" data-animate>
+              <div class="star-row" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>×5</div>
+              <p>“Bubble tunnel plus foam finale — Instagram blew up (in a good way).”</p>
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: var(--space-md)">
+                <img src="https://ui-avatars.com/api/?name=Taylor+Brooks&size=128&background=00E5FF&color=fff" alt="Avatar for Taylor Brooks" width="44" height="44" style="width:44px;height:44px;border-radius:50%" loading="lazy" />
+                <span><strong>Taylor Brooks</strong><br /><span style="color: var(--color-text-muted); font-size: 0.85rem">Brand launch party</span></span>
+              </div>
+            </article>
+            <article class="glass-card" data-animate>
+              <div class="star-row" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>×5</div>
+              <p>“Foam density tuned down for toddlers — thoughtful detail.”</p>
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: var(--space-md)">
+                <img src="https://ui-avatars.com/api/?name=Priya+Desai&size=128&background=00E5FF&color=fff" alt="Avatar for Priya Desai" width="44" height="44" style="width:44px;height:44px;border-radius:50%" loading="lazy" />
+                <span><strong>Priya Desai</strong><br /><span style="color: var(--color-text-muted); font-size: 0.85rem">Neighborhood picnic</span></span>
+              </div>
+            </article>
+            <article class="glass-card" data-animate>
+              <div class="star-row" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg>×5</div>
+              <p>“Cleanup looked easier than after our grill party — impressive.”</p>
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: var(--space-md)">
+                <img src="https://ui-avatars.com/api/?name=Alex+Rivera&size=128&background=00E5FF&color=fff" alt="Avatar for Alex Rivera" width="44" height="44" style="width:44px;height:44px;border-radius:50%" loading="lazy" />
+                <span><strong>Alex Rivera</strong><br /><span style="color: var(--color-text-muted); font-size: 0.85rem">Community fundraiser</span></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="text-center" data-animate>Video Spotlights</h2>
+          <div class="video-grid" style="margin-top: var(--space-2xl)">
+            <article class="video-card glass-card" data-animate style="padding: 0; overflow: hidden">
+              <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1920&q=100&fit=crop&auto=format" alt="Kids enjoying foam activities during a daytime birthday celebration" loading="lazy" width="600" height="360" style="width:100%;height:100%;object-fit:cover;min-height:200px" />
+              <button type="button" class="play-btn" aria-label="Play highlight reel one"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3" /></svg></button>
+            </article>
+            <article class="video-card glass-card" data-animate style="padding: 0; overflow: hidden">
+              <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=1920&q=100&fit=crop&auto=format" alt="Corporate colleagues cheering together outdoors at a company picnic" loading="lazy" width="600" height="360" style="width:100%;height:100%;object-fit:cover;min-height:200px" />
+              <button type="button" class="play-btn" aria-label="Play highlight reel two"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3" /></svg></button>
+            </article>
+            <article class="video-card glass-card" data-animate style="padding: 0; overflow: hidden">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=100&fit=crop&auto=format" alt="Outdoor festival crowd gathered for an evening performance" loading="lazy" width="600" height="360" style="width:100%;height:100%;object-fit:cover;min-height:200px" />
+              <button type="button" class="play-btn" aria-label="Play highlight reel three"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3" /></svg></button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container" style="max-width: 560px">
+          <h2 data-animate>Share Your Review</h2>
+          <form class="glass-card form-stack" data-animate action="#" method="post">
+            <div>
+              <label for="rv-name">Name</label>
+              <input class="input" id="rv-name" name="review_name" type="text" required />
+            </div>
+            <div>
+              <span id="rv-rate-label">Rating</span>
+              <div class="star-picker" data-star-picker role="group" aria-labelledby="rv-rate-label">
+                <input type="hidden" name="rating" id="rv-rating" value="5" />
+                <button type="button" data-star-value aria-label="1 star"><svg viewBox="0 0 24 24" class="is-active"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg></button>
+                <button type="button" data-star-value aria-label="2 stars"><svg viewBox="0 0 24 24" class="is-active"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg></button>
+                <button type="button" data-star-value aria-label="3 stars"><svg viewBox="0 0 24 24" class="is-active"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg></button>
+                <button type="button" data-star-value aria-label="4 stars"><svg viewBox="0 0 24 24" class="is-active"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg></button>
+                <button type="button" data-star-value aria-label="5 stars"><svg viewBox="0 0 24 24" class="is-active"><polygon points="12 2 15 9 22 9 17 14 19 22 12 17 5 22 7 14 2 9 9 9 12 2" /></svg></button>
+              </div>
+            </div>
+            <div>
+              <label for="rv-msg">Message</label>
+              <textarea id="rv-msg" name="message" required placeholder="Tell us what rocked…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Submit Review</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo-link" style="margin-bottom: var(--space-md)">
+          <svg class="logo-icon" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="14" cy="20" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+            <circle cx="26" cy="14" r="7" stroke="currentColor" stroke-width="2" fill="none" />
+            <circle cx="28" cy="28" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+          </svg>
+          <span class="logo-wordmark">FoamFest</span>
+        </a>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--space-md)">
+          Premium foam parties and bubble experiences engineered for safe, vibrant celebrations.
+        </p>
+        <div class="footer-social" aria-label="Social links">
+          <a href="#" aria-label="Facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke-width="2">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg></a>
+          <a href="#" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" />
+            </svg></a>
+          <a href="#" aria-label="YouTube"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="safety.html">Safety</a></li>
+
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="packages.html">Kids Foam Parties</a></li>
+          <li><a href="packages.html">Corporate Foam Days</a></li>
+          <li><a href="packages.html">Premium Bubble Bash</a></li>
+          <li><a href="booking.html">DJ Add-Ons</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p style="display: flex; gap: 0.5rem; align-items: flex-start">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span style="color: var(--color-text-muted)">(555) 019-FOAM</span>
+        </p>
+        <p style="display: flex; gap: 0.5rem; align-items: flex-start">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <span style="color: var(--color-text-muted)">hello@foamfest.events</span>
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© FoamFest 2026 · Foam Party &amp; Bubble Bash Entertainment</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
+    </div>
+  </footer>
+  </body>
+</html>
