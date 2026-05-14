@@ -41,7 +41,14 @@
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn--primary btn--header" href="booking.html">Book Now</a>
+        <a class="btn btn--primary btn--header btn--icon-only" href="booking.html" aria-label="Book Now">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+        </a>
 
         <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle dark and light mode">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
@@ -76,9 +83,6 @@
         <li><a href="packages.html">Packages</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="safety.html">Safety</a></li>
-        <li><a href="booking.html">Booking &amp; FAQ</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
       </ul>
       <div class="mobile-overlay-cta">
         <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
@@ -108,7 +112,7 @@
         <div class="hero__overlay"></div>
         <div class="hero__content text-center" style="margin-inline: auto">
           <div class="safety-hero-icon" data-animate style="display: flex; justify-content: center">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true" width="64" height="64" stroke="var(--color-accent)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
           </div>
           <h1 data-animate>Safety Without Compromise</h1>
         </div>
@@ -124,78 +128,111 @@
               <div class="safety-card-media">
                 <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=800&q=100&fit=crop&auto=format" alt="Glistening soap bubbles" loading="lazy" />
               </div>
-              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></div>
-              <h3>Non-Toxic Foam</h3>
-              <p style="font-size: 0.9rem; color: var(--color-text-muted)">Biodegradable concentrates mixed to exact manufacturer ratios — never mystery buckets.</p>
+              <div style="padding: var(--space-lg) var(--space-xl) var(--space-xl)">
+                <h3>Non-Toxic Foam</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted)">Biodegradable concentrates mixed to exact manufacturer ratios — never mystery buckets.</p>
+              </div>
             </article>
 
             <article class="glass-card safety-card" data-animate>
               <div class="safety-card-media">
                 <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=100&fit=crop&auto=format" alt="Children playing safely" loading="lazy" />
               </div>
-              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10" /><path d="M12 8v4l3 3" /></svg></div>
-              <h3>Child-Safe</h3>
-              <p style="font-size: 0.9rem; color: var(--color-text-muted)">Hypoallergenic formulas with SDS sheets available before your event day.</p>
+              <div style="padding: var(--space-lg) var(--space-xl) var(--space-xl)">
+                <h3>Child-Safe</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted)">Hypoallergenic formulas with SDS sheets available before your event day.</p>
+              </div>
             </article>
 
             <article class="glass-card safety-card" data-animate>
               <div class="safety-card-media">
                 <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=100&fit=crop&auto=format" alt="Professional event crew briefing" loading="lazy" />
               </div>
-              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /></svg></div>
-              <h3>Trained Staff</h3>
-              <p style="font-size: 0.9rem; color: var(--color-text-muted)">Operators certified in crowd pacing, emergency stops, and slip prevention.</p>
+              <div style="padding: var(--space-lg) var(--space-xl) var(--space-xl)">
+                <h3>Trained Staff</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted)">Operators certified in crowd pacing, emergency stops, and slip prevention.</p>
+              </div>
             </article>
 
             <article class="glass-card safety-card" data-animate>
               <div class="safety-card-media">
                 <img src="https://images.unsplash.com/photo-1583324113626-70df0f4deaab?w=800&q=100&fit=crop&auto=format" alt="Safety equipment kit" loading="lazy" />
               </div>
-              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" /></svg></div>
-              <h3>Emergency Ready</h3>
-              <p style="font-size: 0.9rem; color: var(--color-text-muted)">Radios, first-aid, and venue contacts printed on every run sheet.</p>
+              <div style="padding: var(--space-lg) var(--space-xl) var(--space-xl)">
+                <h3>Emergency Ready</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted)">Radios, first-aid, and venue contacts printed on every run sheet.</p>
+              </div>
             </article>
 
             <article class="glass-card safety-card" data-animate>
               <div class="safety-card-media">
                 <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=100&fit=crop&auto=format" alt="Cleaning and sanitation" loading="lazy" />
               </div>
-              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg></div>
-              <h3>Hygiene First</h3>
-              <p style="font-size: 0.9rem; color: var(--color-text-muted)">Tanks flushed, lines sanitized, and cannons inspected between bookings.</p>
+              <div style="padding: var(--space-lg) var(--space-xl) var(--space-xl)">
+                <h3>Hygiene First</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted)">Tanks flushed, lines sanitized, and cannons inspected between bookings.</p>
+              </div>
             </article>
 
             <article class="glass-card safety-card" data-animate>
               <div class="safety-card-media">
                 <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=100&fit=crop&auto=format" alt="Official event insurance documents" loading="lazy" />
               </div>
-              <div class="feature-icon" style="margin: 0 auto 1rem"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg></div>
-              <h3>Fully Insured</h3>
-              <p style="font-size: 0.9rem; color: var(--color-text-muted)">General liability with optional event paperwork for schools and venues.</p>
+              <div style="padding: var(--space-lg) var(--space-xl) var(--space-xl)">
+                <h3>Fully Insured</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted)">General liability with optional event paperwork for schools and venues.</p>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--tight">
-        <div class="container" style="max-width: 800px">
-          <div class="text-center">
-            <h2 data-animate>The Safety Checklist</h2>
-            <p class="lead" data-animate>Every event follows a rigorous, non-negotiable inspection flow.</p>
-          </div>
-          <div data-accordion class="glass-card" style="margin-top: var(--space-xl); padding: 0" data-animate>
-            <div class="accordion-item" style="padding: 0 var(--space-lg)">
-              <button type="button" class="accordion-trigger">Pre-event venue checks<span class="accordion-icon">+</span></button>
-              <div class="accordion-panel"><div class="accordion-panel-inner">Drainage paths, outlet testing, slip mats, and fence gaps verified with your site contact.</div></div>
+      <section class="section section--tight" style="background: rgba(0, 229, 255, 0.02)">
+        <div class="container">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: var(--space-3xl); align-items: start">
+            
+            <div data-animate>
+              <h2 class="mt-0">The Safety Checklist</h2>
+              <p class="lead">Every event follows a rigorous, non-negotiable inspection flow.</p>
+              <div data-accordion class="glass-card" style="margin-top: var(--space-xl); padding: 0">
+                <div class="accordion-item">
+                  <button type="button" class="accordion-trigger">Pre-event venue checks<span class="accordion-icon">+</span></button>
+                  <div class="accordion-panel"><div class="accordion-panel-inner">Drainage paths, outlet testing, slip mats, and fence gaps verified with your site contact.</div></div>
+                </div>
+                <div class="accordion-item">
+                  <button type="button" class="accordion-trigger">During-event monitoring<span class="accordion-icon">+</span></button>
+                  <div class="accordion-panel"><div class="accordion-panel-inner">Foam depth capped for toddlers, teen zones separated when requested, and audio kept hearing-safe.</div></div>
+                </div>
+                <div class="accordion-item" style="border-bottom: none">
+                  <button type="button" class="accordion-trigger">Wind and weather holds<span class="accordion-icon">+</span></button>
+                  <div class="accordion-panel"><div class="accordion-panel-inner">We pause cannons in gusty wind, stash cables, and resume when surfaces are stable.</div></div>
+                </div>
+              </div>
             </div>
-            <div class="accordion-item" style="padding: 0 var(--space-lg)">
-              <button type="button" class="accordion-trigger">During-event monitoring<span class="accordion-icon">+</span></button>
-              <div class="accordion-panel"><div class="accordion-panel-inner">Foam depth capped for toddlers, teen zones separated when requested, and audio kept hearing-safe.</div></div>
+
+            <div data-animate>
+              <h2 class="mt-0">Parent FAQ</h2>
+              <p class="lead">Quick answers to common safety concerns from our community.</p>
+              <div data-accordion data-accordion-single class="glass-card" style="margin-top: var(--space-xl); padding: 0">
+                <div class="accordion-item">
+                  <button type="button" class="accordion-trigger">Will foam irritate sensitive skin?<span class="accordion-icon">+</span></button>
+                  <div class="accordion-panel"><div class="accordion-panel-inner">Most guests tolerate our formula well; we provide rinse stations and ingredient lists on request.</div></div>
+                </div>
+                <div class="accordion-item">
+                  <button type="button" class="accordion-trigger">Do kids need goggles?<span class="accordion-icon">+</span></button>
+                  <div class="accordion-panel"><div class="accordion-panel-inner">Optional swim goggles are welcome; foam stays shoulder-height for youngest groups.</div></div>
+                </div>
+                <div class="accordion-item">
+                  <button type="button" class="accordion-trigger">How slippery does it get?<span class="accordion-icon">+</span></button>
+                  <div class="accordion-panel"><div class="accordion-panel-inner">We deploy mats, pace cannon bursts, and station spotters near transitions.</div></div>
+                </div>
+                <div class="accordion-item" style="border-bottom: none">
+                  <button type="button" class="accordion-trigger">What about allergies?<span class="accordion-icon">+</span></button>
+                  <div class="accordion-panel"><div class="accordion-panel-inner">Share allergy notes during booking — we adapt concentrates and signage accordingly.</div></div>
+                </div>
+              </div>
             </div>
-            <div class="accordion-item" style="padding: 0 var(--space-lg); border-bottom: none">
-              <button type="button" class="accordion-trigger">Wind and weather holds<span class="accordion-icon">+</span></button>
-              <div class="accordion-panel"><div class="accordion-panel-inner">We pause cannons in gusty wind, stash cables, and resume when surfaces are stable.</div></div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -210,33 +247,6 @@
           </div>
           <div style="margin-top: var(--space-3xl); border-radius: var(--radius-card); overflow: hidden; max-width: 960px; margin-inline: auto; box-shadow: var(--shadow-glow-cyan)" data-animate>
             <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=100&fit=crop&auto=format" alt="Safety briefing with diverse staff reviewing planning documents together" loading="lazy" width="1200" height="600" style="width:100%;height:400px;object-fit:cover" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--tight">
-        <div class="container" style="max-width: 800px">
-          <div class="text-center">
-            <h2 data-animate>Parent FAQ</h2>
-            <p class="lead" data-animate>Quick answers to common safety concerns from our community.</p>
-          </div>
-          <div data-accordion data-accordion-single class="glass-card" style="margin-top: var(--space-xl); padding: 0" data-animate>
-            <div class="accordion-item" style="padding: 0 var(--space-lg)">
-              <button type="button" class="accordion-trigger">Will foam irritate sensitive skin?<span class="accordion-icon">+</span></button>
-              <div class="accordion-panel"><div class="accordion-panel-inner">Most guests tolerate our formula well; we provide rinse stations and ingredient lists on request.</div></div>
-            </div>
-            <div class="accordion-item" style="padding: 0 var(--space-lg)">
-              <button type="button" class="accordion-trigger">Do kids need goggles?<span class="accordion-icon">+</span></button>
-              <div class="accordion-panel"><div class="accordion-panel-inner">Optional swim goggles are welcome; foam stays shoulder-height for youngest groups.</div></div>
-            </div>
-            <div class="accordion-item" style="padding: 0 var(--space-lg)">
-              <button type="button" class="accordion-trigger">How slippery does it get?<span class="accordion-icon">+</span></button>
-              <div class="accordion-panel"><div class="accordion-panel-inner">We deploy mats, pace cannon bursts, and station spotters near transitions.</div></div>
-            </div>
-            <div class="accordion-item" style="padding: 0 var(--space-lg); border-bottom: none">
-              <button type="button" class="accordion-trigger">What about allergies?<span class="accordion-icon">+</span></button>
-              <div class="accordion-panel"><div class="accordion-panel-inner">Share allergy notes during booking — we adapt concentrates and signage accordingly.</div></div>
-            </div>
           </div>
         </div>
       </section>
@@ -284,12 +294,9 @@
         <h4>Quick Links</h4>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-
           <li><a href="packages.html">Packages</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="safety.html">Safety</a></li>
-
-
         </ul>
       </div>
       <div class="footer-col">
@@ -299,7 +306,6 @@
           <li><a href="packages.html">Corporate Foam Days</a></li>
           <li><a href="packages.html">Premium Bubble Bash</a></li>
           <li><a href="booking.html">DJ Add-Ons</a></li>
-
         </ul>
       </div>
       <div class="footer-col">
@@ -318,6 +324,20 @@
           </svg>
           <span style="color: var(--color-text-muted)">hello@foamfest.events</span>
         </p>
+        <p style="display: flex; gap: 0.5rem; align-items: flex-start">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span style="color: var(--color-text-muted)">123 Bubble Lane, Foam City, FL</span>
+        </p>
+        <p style="display: flex; gap: 0.5rem; align-items: flex-start">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          <span style="color: var(--color-text-muted)">Mon-Sun: 9:00 AM - 8:00 PM</span>
+        </p>
       </div>
     </div>
     <div class="container footer-bottom">
@@ -325,5 +345,10 @@
       <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
     </div>
   </footer>
-  </body>
+    <button type="button" class="back-to-top" data-back-to-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+</body>
 </html>

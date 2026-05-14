@@ -41,7 +41,14 @@
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn--primary btn--header" href="booking.html">Book Now</a>
+        <a class="btn btn--primary btn--header btn--icon-only" href="booking.html" aria-label="Book Now">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+        </a>
 
         <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle dark and light mode">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
@@ -76,9 +83,6 @@
         <li><a href="packages.html">Packages</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="safety.html">Safety</a></li>
-        <li><a href="booking.html">Booking &amp; FAQ</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
       </ul>
       <div class="mobile-overlay-cta">
         <a class="btn btn--primary btn--full" href="booking.html">Book Now</a>
@@ -101,42 +105,44 @@
   </div>
 
     <main id="main">
-      <section class="hero" style="min-height: 48vh">
+    <main id="main">
+      <section class="hero hero--small" style="min-height: 50vh">
         <div class="hero__bg-img">
-          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=3840&q=100&fit=crop&auto=format" alt="Outdoor venue prepared for a large community celebration at dusk" width="1920" height="1080" style="width:100%;height:100%;object-fit:cover" fetchpriority="high" />
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=3840&q=100&fit=crop&auto=format" alt="Outdoor event venue" width="1920" height="1080" fetchpriority="high" />
         </div>
         <div class="hero__overlay"></div>
-        <div class="hero__content text-center" style="margin-inline: auto">
+        <div class="hero__content text-center">
           <div style="display: flex; justify-content: center; margin-bottom: var(--space-md)" data-animate>
-            <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
           </div>
-          <h1 data-animate>Booking &amp; FAQ</h1>
+          <h1 data-animate>Secure Your Event</h1>
+          <p class="lead" data-animate>From private birthdays to stadium festivals, we engineer the perfect foam experience.</p>
         </div>
       </section>
 
       <section class="section section--tight">
         <div class="container">
-          <h2 class="text-center" data-animate>Booking Flow</h2>
-          <div class="booking-steps" style="margin-top: var(--space-2xl)">
+          <h2 class="text-center" data-animate>Booking Journey</h2>
+          <div class="booking-steps">
             <div class="booking-step" data-animate>
-              <div class="booking-step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /></svg></div>
-              <h3>Choose Package</h3>
-              <p style="font-size: 0.9rem">Pick a tier or bring us a custom headcount.</p>
+              <div class="booking-step-icon" data-step="1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /></svg></div>
+              <h3>Select Package</h3>
+              <p>Choose a tier or request a custom headcount setup.</p>
             </div>
             <div class="booking-step" data-animate>
-              <div class="booking-step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg></div>
-              <h3>Pick Date</h3>
-              <p style="font-size: 0.9rem">Share two alternates for faster matching.</p>
+              <div class="booking-step-icon" data-step="2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg></div>
+              <h3>Pick Your Date</h3>
+              <p>Check availability for your target date and alternates.</p>
             </div>
             <div class="booking-step" data-animate>
-              <div class="booking-step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" /><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" /></svg></div>
+              <div class="booking-step-icon" data-step="3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" /><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" /></svg></div>
               <h3>Confirm Details</h3>
-              <p style="font-size: 0.9rem">Review venue notes, insurance, and add-ons.</p>
+              <p>Review venue requirements and custom add-ons.</p>
             </div>
             <div class="booking-step" data-animate>
-              <div class="booking-step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg></div>
-              <h3>Party!</h3>
-              <p style="font-size: 0.9rem">We arrive early, foam on cue, and wrap tidy.</p>
+              <div class="booking-step-icon" data-step="4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg></div>
+              <h3>The Party!</h3>
+              <p>We handle setup, operation, and clean wrap-up.</p>
             </div>
           </div>
         </div>
@@ -144,67 +150,124 @@
 
       <section class="section">
         <div class="container booking-layout">
-          <div>
-            <div style="border-radius: var(--radius-card); overflow: hidden; margin-bottom: var(--space-xl)" data-animate>
-              <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=1920&q=100&fit=crop&auto=format" alt="Guests celebrating together during an outdoor evening party" loading="lazy" width="1200" height="675" style="width:100%;height:100%;object-fit:cover;max-height:320px" />
+          <div class="booking-main">
+            <div class="glass-card" style="padding: 0; overflow: hidden; margin-bottom: var(--space-xl); display: block; text-align: left" data-animate>
+              <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=1920&q=100&fit=crop&auto=format" alt="Party celebration" loading="lazy" width="1200" height="400" style="width:100%; height:280px; object-fit:cover" />
+              <div style="padding: var(--space-xl)">
+                <h2 style="text-align: left; margin: 0 0 var(--space-xs)">Request Your Proposal</h2>
+                <p style="text-align: left; margin-bottom: 0">Fill out the details below and our event architects will reach out within 24 hours.</p>
+              </div>
             </div>
-            <h2 data-animate>Booking Form</h2>
-            <form class="glass-card form-stack" data-animate action="#" method="post">
-              <div>
-                <label for="bf-name">Full Name</label>
-                <input class="input" id="bf-name" name="name" type="text" autocomplete="name" required />
+            
+            <form class="glass-card form-stack" data-animate action="#" method="post" style="text-align: left; align-items: stretch; padding: var(--space-xl)">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg); margin-bottom: var(--space-lg)">
+                <div class="form-group">
+                  <label for="bf-name" style="font-weight: 600; margin-bottom: var(--space-xs); display: block">Full Name</label>
+                  <input class="input" id="bf-name" name="name" type="text" placeholder="John Doe" autocomplete="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="bf-email" style="font-weight: 600; margin-bottom: var(--space-xs); display: block">Email Address</label>
+                  <input class="input" id="bf-email" name="email" type="email" placeholder="john@example.com" autocomplete="email" required />
+                </div>
               </div>
-              <div>
-                <label for="bf-email">Email Address</label>
-                <input class="input" id="bf-email" name="email" type="email" autocomplete="email" required />
-              </div>
-              <div>
-                <label for="bf-phone">Phone Number</label>
-                <input class="input" id="bf-phone" name="phone" type="tel" autocomplete="tel" required />
-              </div>
-              <div>
-                <label for="bf-type">Event Type</label>
-                <select id="bf-type" name="event_type" required>
-                  <option value="">Select…</option>
-                  <option>Kids birthday</option>
-                  <option>School / camp</option>
-                  <option>Corporate</option>
-                  <option>Community festival</option>
-                </select>
-              </div>
-              <div>
-                <label for="bf-date">Preferred Date</label>
-                <input class="input" id="bf-date" name="date" type="date" required />
-              </div>
-              <div>
-                <label for="bf-guests">Number of Guests</label>
-                <input class="input" id="bf-guests" name="guests" type="number" min="1" required />
-              </div>
-              <div>
-                <label for="bf-notes">Special Requests</label>
-                <textarea id="bf-notes" name="notes" placeholder="Allergies, venue constraints, surprise cues…"></textarea>
-              </div>
-              <button type="submit" class="btn btn--primary btn--full">Submit Booking Request</button>
-            </form>
 
-            <h2 style="margin-top: var(--space-3xl)" data-animate>Frequently Asked Questions</h2>
-            <div data-accordion data-accordion-single class="glass-card" style="padding: var(--space-lg); margin-top: var(--space-lg)" data-animate>
-              <div class="accordion-item"><button type="button" class="accordion-trigger">How fast do you respond?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Within one business day with availability or thoughtful alternatives.</div></div></div>
-              <div class="accordion-item"><button type="button" class="accordion-trigger">Can we split payments?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Yes — deposit to reserve, balance due before the event date.</div></div></div>
-              <div class="accordion-item"><button type="button" class="accordion-trigger">Do you travel outside city limits?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">We serve surrounding counties with a modest travel line item.</div></div></div>
-              <div class="accordion-item"><button type="button" class="accordion-trigger">What surfaces work best?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Flat turf, sport courts, or sealed driveways — we flag slopes early.</div></div></div>
-              <div class="accordion-item"><button type="button" class="accordion-trigger">Can we add last-minute guests?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Often yes — foam concentrate scales quickly with modest fees.</div></div></div>
-              <div class="accordion-item"><button type="button" class="accordion-trigger">Is gratuity included?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Optional gratuity can be added for crews who exceed expectations.</div></div></div>
-              <div class="accordion-item"><button type="button" class="accordion-trigger">What if my HOA needs paperwork?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">We supply COI templates and quick-turn signatures.</div></div></div>
-              <div class="accordion-item"><button type="button" class="accordion-trigger">Do you offer educator discounts?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Schools and nonprofits receive tailored proposals — mention it in your form.</div></div></div>
-            </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg); margin-bottom: var(--space-lg)">
+                <div class="form-group">
+                  <label for="bf-phone" style="font-weight: 600; margin-bottom: var(--space-xs); display: block">Phone Number</label>
+                  <input class="input" id="bf-phone" name="phone" type="tel" placeholder="(555) 000-0000" autocomplete="tel" required />
+                </div>
+                <div class="form-group">
+                  <label for="bf-type" style="font-weight: 600; margin-bottom: var(--space-xs); display: block">Event Category</label>
+                  <select class="input" id="bf-type" name="event_type" required>
+                    <option value="" disabled selected>Select event category...</option>
+                    <option>Private Birthday Celebration</option>
+                    <option>School or Youth Camp</option>
+                    <option>Corporate Team Event</option>
+                    <option>Large Community Festival</option>
+                    <option>Other Custom Spectacle</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg); margin-bottom: var(--space-lg)">
+                <div class="form-group">
+                  <label for="bf-date" style="font-weight: 600; margin-bottom: var(--space-xs); display: block">Target Event Date</label>
+                  <input class="input" id="bf-date" name="date" type="date" required />
+                </div>
+                <div class="form-group">
+                  <label for="bf-guests" style="font-weight: 600; margin-bottom: var(--space-xs); display: block">Estimated Guest Count</label>
+                  <input class="input" id="bf-guests" name="guests" type="number" placeholder="Approximate number of guests" min="1" required />
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom: var(--space-lg)">
+                <label for="bf-notes" style="font-weight: 600; margin-bottom: var(--space-xs); display: block">Tell us about your crowd & venue</label>
+                <textarea class="input" id="bf-notes" name="notes" rows="4" placeholder="Share details about your audience, the venue type (grass, pavement, indoor), and any special requirements..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" style="height: 60px; font-size: 1.1rem; margin-top: var(--space-md)">
+                Request Custom Proposal
+              </button>
+              
+              <div class="text-center" style="margin-top: var(--space-md)">
+                <p style="font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 8px">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Your information is secure and used only for event planning.
+                </p>
+              </div>
+            </form>
           </div>
+
           <aside class="sidebar-panel" data-animate>
-            <h3 class="mt-0">Talk directly</h3>
-            <a href="tel:+15550193662"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg> (555) 019-FOAM</a>
-            <a href="mailto:hello@foamfest.events"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg> hello@foamfest.events</a>
-            <a href="https://wa.me/15550193662"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg> WhatsApp Concierge</a>
+            <h3 class="mt-0">Direct Concierge</h3>
+            <div style="display: flex; flex-direction: column; gap: var(--space-md)">
+              <a href="tel:+15550193662">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                (555) 019-FOAM
+              </a>
+              <a href="mailto:hello@foamfest.events">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                hello@foamfest.events
+              </a>
+              <a href="https://wa.me/15550193662">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>
+                WhatsApp Concierge
+              </a>
+            </div>
+
+            <div class="glass-card" style="margin-top: var(--space-2xl); padding: var(--space-xl); text-align: left; align-items: flex-start">
+              <h4 style="margin-bottom: var(--space-xs)">Need a custom quote?</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-md)">Large festivals and stadium events require bespoke logistics. Reach out to our event architects directly.</p>
+              <a href="contact.html" class="btn btn--secondary btn--full">Contact Team</a>
+            </div>
+
+            <div style="margin-top: var(--space-xl); display: flex; flex-direction: column; gap: var(--space-md)">
+              <div style="display: flex; gap: var(--space-md); align-items: center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span style="font-size: 0.9rem; font-weight: 600">Fully Licensed & Insured</span>
+              </div>
+              <div style="display: flex; gap: var(--space-md); align-items: center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span style="font-size: 0.9rem; font-weight: 600">Quick Response Guaranteed</span>
+              </div>
+            </div>
           </aside>
+        </div>
+      </section>
+
+      <section class="section section--tight" style="background: rgba(0, 229, 255, 0.03)">
+        <div class="container" style="max-width: 900px">
+          <h2 class="text-center" data-animate>Common Questions</h2>
+          <div data-accordion data-accordion-single class="glass-card" style="padding: 0; margin-top: var(--space-2xl); overflow: hidden; text-align: left; align-items: stretch" data-animate>
+            <div class="accordion-item"><button type="button" class="accordion-trigger">How fast do you respond?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Within one business day with availability or thoughtful alternatives.</div></div></div>
+            <div class="accordion-item"><button type="button" class="accordion-trigger">Can we split payments?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Yes — deposit to reserve, balance due before the event date.</div></div></div>
+            <div class="accordion-item"><button type="button" class="accordion-trigger">Do you travel outside city limits?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">We serve surrounding counties with a modest travel line item.</div></div></div>
+            <div class="accordion-item"><button type="button" class="accordion-trigger">What surfaces work best?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Flat turf, sport courts, or sealed driveways — we flag slopes early.</div></div></div>
+            <div class="accordion-item"><button type="button" class="accordion-trigger">Can we add last-minute guests?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Often yes — foam concentrate scales quickly with modest fees.</div></div></div>
+            <div class="accordion-item"><button type="button" class="accordion-trigger">Is gratuity included?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Optional gratuity can be added for crews who exceed expectations.</div></div></div>
+            <div class="accordion-item"><button type="button" class="accordion-trigger">What if my HOA needs paperwork?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">We supply COI templates and quick-turn signatures.</div></div></div>
+            <div class="accordion-item" style="border-bottom: none"><button type="button" class="accordion-trigger">Do you offer educator discounts?<span class="accordion-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Schools and nonprofits receive tailored proposals — mention it in your form.</div></div></div>
+          </div>
         </div>
       </section>
     </main>
@@ -278,6 +341,20 @@
           </svg>
           <span style="color: var(--color-text-muted)">hello@foamfest.events</span>
         </p>
+        <p style="display: flex; gap: 0.5rem; align-items: flex-start">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span style="color: var(--color-text-muted)">123 Bubble Lane, Foam City, FL</span>
+        </p>
+        <p style="display: flex; gap: 0.5rem; align-items: flex-start">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          <span style="color: var(--color-text-muted)">Mon-Sun: 9:00 AM - 8:00 PM</span>
+        </p>
       </div>
     </div>
     <div class="container footer-bottom">
@@ -285,5 +362,10 @@
       <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
     </div>
   </footer>
-  </body>
+    <button type="button" class="back-to-top" data-back-to-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+</body>
 </html>
