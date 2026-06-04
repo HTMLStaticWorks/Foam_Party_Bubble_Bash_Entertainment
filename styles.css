@@ -807,6 +807,24 @@ section h1 + p, section h2 + p,
   }
 }
 
+/* Tight fit at exactly 1024px — prevent "Home 2" from wrapping */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .nav-list {
+    gap: 0;
+  }
+
+  .nav-list a,
+  .dropdown-trigger {
+    padding: var(--space-sm) 0.5rem;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+
+  .header-inner {
+    gap: var(--space-sm);
+  }
+}
+
 .nav-list {
   display: flex;
   align-items: center;
