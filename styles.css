@@ -1294,7 +1294,7 @@ main {
   perspective: 1200px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .pricing-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1315,7 +1315,7 @@ main {
   box-shadow: var(--shadow-glow-fuchsia);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .pricing-card--featured {
     transform: none;
   }
@@ -1886,6 +1886,11 @@ main {
   .team-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.team-grid .glass-card {
+  justify-content: flex-start;
+  height: 100%;
 }
 
 .team-card .social a svg {
@@ -3202,13 +3207,13 @@ label {
 
 .step-timeline-num {
   font-family: var(--font-heading);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--color-accent);
-  opacity: 0.15;
+  opacity: 0.9;
   line-height: 1;
-  margin-bottom: -1.5rem;
-  z-index: 0;
+  margin-bottom: var(--space-sm);
+  z-index: 1;
   position: relative;
 }
 
@@ -3233,7 +3238,8 @@ label {
   }
 }
 
-.story-grid p {
+.story-grid p,
+.section .story-grid h2 + p {
   font-size: 1rem !important;
   text-align: left !important;
   margin-inline: 0 !important;
