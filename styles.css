@@ -2453,6 +2453,13 @@ label {
   fill: none;
 }
 
+.info-line--centered {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
 .hours-table {
   width: 100%;
   border-collapse: collapse;
