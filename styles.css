@@ -738,6 +738,19 @@ section h1 + p, section h2 + p,
   line-height: 1.6;
 }
 
+/* FAQ View More link */
+.view-more-faq {
+  transition: color var(--transition), opacity var(--transition), transform var(--transition);
+}
+
+.view-more-faq:hover {
+  color: var(--color-accent-2) !important;
+}
+
+.view-more-faq:active {
+  transform: scale(0.98);
+}
+
 /* Header */
 .site-header {
   position: fixed;
@@ -2671,6 +2684,12 @@ label {
   font-weight: 700;
 }
 
+.footer-col p svg {
+  stroke: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
 .footer-links {
   list-style: none;
   padding: 0;
@@ -3147,6 +3166,10 @@ label {
 
 .layered-card:hover {
   transform: translateY(-8px);
+}
+
+.layered-card p {
+  color: #d8b9cb !important;
 }
 
 /* Breakout images */

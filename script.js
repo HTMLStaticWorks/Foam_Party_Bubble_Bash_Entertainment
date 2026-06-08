@@ -576,8 +576,35 @@
       { passive: true }
     );
 
-    btn.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    initBackToTop();
+  }
+
+  /* --- FAQ View More Toggle --- */
+  function initFaqToggle() {
+    const btn = document.getElementById("viewMoreFaqLink");
+    const extraFaqs = document.getElementById("faqExtraQuestions");
+    const item5 = document.getElementById("accordion-item-5");
+    if (!btn || !extraFaqs) return;
+
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const isHidden = extraFaqs.style.display === "none" || !extraFaqs.style.display;
+      const arrow = btn.querySelector("svg");
+      const span = btn.querySelector("span");
+
+      if (isHidden) {
+        extraFaqs.style.display = "block";
+        if (item5) item5.style.borderBottom = "1px solid var(--color-border)";
+        if (span) span.textContent = "View Less";
+        if (arrow) arrow.style.transform = "rotate(180deg)";
+      } else {
+        extraFaqs.style.display = "none";
+        if (item5) item5.style.borderBottom = "none";
+        if (span) span.textContent = "View More Questions";
+        if (arrow) arrow.style.transform = "rotate(0deg)";
+        
+        btn.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
     });
   }
 
@@ -603,6 +630,7 @@
     initGalleryLoadMore();
     initRandomBubbles();
     initBackToTop();
+    initFaqToggle();
   }
 
   if (document.readyState === "loading") {
